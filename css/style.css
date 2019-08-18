@@ -3,18 +3,57 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 
+header {
+  height: 200px;
+}
+
+
 h1 {
-      font: black 2.1875rem;
+  font: black 3rem;
 }
 
 h2 {
+  font: bold black 2.1875rem;  /*  35px/16 */
+}
 
+.sample-kit-title {
+  text-transform: capitalize;
 }
 
 h3 {
 
 }
 
-p {
+h4 {
+  font-size: .835625em;
+  text-transform: capitalize;
+}
 
+p {
+  font: 1rem;
+}
+
+.primary-content {
+  width: 60%;
+  max-width: 800px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sample-kit{
+  margin: 50px 0 50px;
+  align: center;
+}
+
+.sample {
+  width: auto;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 5px 5px 6 13%;
+  margin-top: 25px;
+  padding: 0px;
+}
+
+#sample-time {
+  padding: 20px;
 }
