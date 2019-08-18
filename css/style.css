@@ -1,5 +1,5 @@
 body {
-  background-color: #6AE5CE;
+  background: #6AE5CE;
   font-family: helvetica, arial, sans-serif;
 }
 
@@ -16,12 +16,20 @@ h2 {
   font: bold black 2.1875rem;  /*  35px/16 */
 }
 
-.sample-kit-title {
-  text-transform: capitalize;
+/* .sample-kit-title {
+  text-transform: capitalize; */
 }
 
 h3 {
+  font: black
+}
 
+/* .sample-title {
+  text-transform: capitalize; */
+}
+.sample-time{
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 h4 {
@@ -38,11 +46,13 @@ p {
   max-width: 800px;
   margin: 0px;
   padding: 0px;
+  justify-content: center;
 }
 
 #sample-kit{
   margin: 50px 0 50px;
   align: center;
+  text-transform: capitalize;
 }
 
 .sample {
@@ -52,6 +62,7 @@ p {
   box-shadow: 5px 5px 6 13%;
   margin-top: 25px;
   padding: 0px;
+  display: inline-block;
 }
 
 #sample-time {
