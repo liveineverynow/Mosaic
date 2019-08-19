@@ -1,19 +1,25 @@
+/* Base Styles -------------------- */
+
 body {
   background: #6AE5CE;
   font-family: helvetica, arial, sans-serif;
 }
 
 header {
-  height: 200px;
+  height: 150px;
 }
 
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 
 h1 {
-  font: black 3rem;
+  font: black 3rem;  /* 48px/16 */
 }
 
 h2 {
-  font: bold black 2.1875rem;  /*  35px/16 */
+  font:  black 2.1875rem;  /* 35px/16 */
 }
 
 /* .sample-kit-title {
@@ -21,50 +27,126 @@ h2 {
 }
 
 h3 {
-  font: black
-}
-
-/* .sample-title {
-  text-transform: capitalize; */
-}
-.sample-time{
-  text-transform: capitalize;
-  text-decoration: none;
+  font: #000 normal;
 }
 
 h4 {
-  font-size: .835625em;
+  font-size: .835625em;  /*13.37px /16px */
   text-transform: capitalize;
+  font-style: normal;
 }
 
 p {
+  font: 1rem; /*16px /16px */
+}
+
+nav{
+  text-decoration:none;
+}
+
+ul {
+  text-decoration: none;
+}
+
+li {
+  style:none;
+}
+
+a {
   font: 1rem;
+  style: none;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:hover {
+  font: red;
+}
+
+
+/* Main Styles --------------------- */
+
+
+.main-header{
+  width: 100%;
+  margin-top: auto;
+  align-content: center;
+  border: 2px red solid;
+}
+
+#main-title{
+  width: 500px;
+  margin-top: auto;
+  align-items: center;
+  align-content: center;
+  border: 2px red solid;
+  display: grid;
 }
 
 .primary-content {
-  width: 60%;
-  max-width: 800px;
-  margin: 0px;
-  padding: 0px;
-  justify-content: center;
+  width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+    align-content: center;
+    border: 2px red solid;
 }
 
 #sample-kit{
   margin: 50px 0 50px;
-  align: center;
-  text-transform: capitalize;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content:  center;
+  border: 2px red solid;
 }
 
 .sample {
-  width: auto;
+  width: 100%;
   max-width: 800px;
+  height: 60px;
   background-color: #fff;
-  box-shadow: 5px 5px 6 13%;
   margin-top: 25px;
-  padding: 0px;
+  padding: 10px;
+  padding-top: 18px;
   display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 6 50%;
+  border: 2px red solid;
+}
+
+#sample-title {
+  text-transform: capitalize;
+  display: inline;
+  border: 2px red solid;
 }
 
 #sample-time {
-  padding: 20px;
+  padding-left: 60%;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline;
+  border: 2px red solid;
 }
+
+/* Layout Styles ------------------ */
+
+footer {
+ width:100%;
+align-items: center;
+border: 2px red solid;
+}
+
+/* Media Queries ------------------ */
+
+ @media (max-wdith: 1024px) {
+   .primary-content {
+     wdith:80%;
+   }
+ }
+
+ @media (max-wdith: 624px) {
+   .primary-content {
+     wdith:90%;
+   }
+ }
