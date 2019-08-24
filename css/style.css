@@ -207,9 +207,13 @@ a:hover {
 /* Layout Styles ------------------ */
 
 footer {
- width:100%;
+width:100%;
 align-items: center;
 border: 2px red solid;
+width:100%;
+padding-left: 100px;
+padding-right: 60px;
+margin:auto;
 }
 
 /* Media Queries ------------------ */
