@@ -55,7 +55,6 @@ function buildControls(sample) {
   
   // Change the background gradient to reflect the percentage of the sample played
   sample.ontimeupdate = function() {
-    sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${Math.floor(sample.duration) % 60}`
     let percent = (sample.currentTime / sample.duration * 100)
     div.style.backgroundImage = `linear-gradient(to right, #ccc ${percent}%, #fff 0%)`
   }
