@@ -7,6 +7,7 @@ body {
 
 header {
   height: 150px;
+  display: flex;
 }
 
 img {
@@ -36,31 +37,54 @@ h4 {
   letter-spacing: 32;
 }
 
+h6 {
+  margin:0;
+  padding:0;
+  text-transform: capitalize;
+  font-style: bold;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+
+
 p {
   font-size: .835625rem;  /*13.37px /16px */
 }
 
 nav{
-
+    max-width: 60%;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
 }
 
-ul {
+/* ul {
   text-decoration: none;
 }
 
 li {
   style:none;
-}
+} */
 
 a {
   text-transform: uppercase;
   font-size: 1 rem;
+  display:block;
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
 }
 
 /* Pseudo-classes ------------------ */
 
 a:hover {
   text-transform: uppercase;
+  font-style: bold;
+  text-decoration: none;
+  color: black;
   font-size: 1 rem;
   color:hotpink;
 }
@@ -72,7 +96,7 @@ a:hover {
 .main-header{
   width: 100%;
   margin: auto;
-  border: 2px red solid;
+  margin-bottom: 75px;
 }
 
 #main-title{
@@ -83,56 +107,43 @@ a:hover {
   max-width: 960px;
   align-content: center;
   text-align: center;
-  border: 2px red solid;
 }
 
 .primary-content {
-  width: 75%;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 95%;
   margin: auto;
   max-width: 800px;
   align-content: center;
-  /* border: 2px red solid; */
 }
 
 #intro-explanantion {
-  margin-bottom: 141px;
+  margin-bottom: 125px;
 }
 
 #sample-kit{
-  margin: 50px 0 50px;
-  /* padding-left: 50px; */
-  padding-right: 50px;
+  margin: 50px 0 25px 0;
   justify-content:  center;
-  /* border: 2px purple solid; */
-  /* text-transform: uppercase; */
   margin-bottom: 25px;
 }
 
 #sample-kit-title{
-  width: 75%;
-  padding-left: 100px;
-  padding-right: 60px;
+  width: 100%;
   margin:auto;
-  margin-left: 35px;
-  margin-bottom: 15px;
   max-width: 800px;
-  /* border: 2px purple solid; */
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 #sample-kit-sub-title{
-  width: 75%;
-  padding-left: 100px;
-  padding-right: 60px;
+  width: 100%;
+  /* padding-left: 100px;
+  padding-right: 60px; */
   margin:auto;
-  margin-left: 35px;
-  margin-bottom: 60px;
-  max-width: 800px;
-  justify-content:  center;
-  /* border: 2px purple solid; */
+  /* margin-left: 35px; */
+  margin-bottom: 30px;
+  /* max-width: 800px;
+  justify-content:  center; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -157,7 +168,6 @@ a:hover {
   text-transform: uppercase;
   user-select: none;
   display: inline;
-  /* border: 2px red solid; */
   margin: auto;
   margin-top: 18px;
   float:left;
@@ -183,35 +193,27 @@ a:hover {
 }
 
 #download-link{
-  width: 75%;
-  padding-left: 100px;
-  padding-right: 60px;
+  width: 100%;
   margin:auto;
-  margin-left: 35px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 800px;
   text-align: center;
-  margin:auto;
   text-transform:uppercase;
-  /* border: 2px red solid; */
-  margin-bottom: 25px;
-
 }
 
 /* Layout Styles ------------------ */
 
 footer {
-width:100%;
-align-items: center;
-border: 2px red solid;
-width:100%;
-padding-left: 100px;
-padding-right: 60px;
-margin:auto;
+  width:100%;
+  margin:auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media Queries ------------------ */
-
  @media (max-wdith: 1024px) {
    .primary-content {
      width:80%;
