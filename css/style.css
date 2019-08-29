@@ -183,12 +183,11 @@ a:hover {
   width: 100%;
   margin:auto;
   margin-top: 50px;
-  margin-bottom: 50px;
   max-width: 800px;
   text-align: center;
   text-transform:uppercase;
-  /* border: 2px red solid; */
   margin-bottom: 25px;
+  color:hotpink;
 }
 
 .shape-tiles {
@@ -196,16 +195,16 @@ a:hover {
 }
 
 .shape-tiles img {
-  width: 100%;
+  width: 110%;
 }
 
 .shape-container{
   display:block;
-  width: 95%;
+  width: 110%;
   position: fixed;
   top: 0;
   bottom: 0;
-  height: 90vh;
+  height: 100vh;
   left: 0;
   right: 0;
   margin: auto;
@@ -213,16 +212,16 @@ a:hover {
 
 #ShapeA {
   left: -5%;
-  position: fixed;
+  position: absolute;
   width: 500px;
   top: 70%;
 }
 
 #ShapeB {
-  left: 5%;
+  left: 3%;
   position: fixed;
   width: 525px;
-  top: 20%;
+  top: 15%;
 }
 
 #ShapeC {
@@ -275,4 +274,5 @@ footer {
    .primary-content {
      width:100%;
    }
+
  }
