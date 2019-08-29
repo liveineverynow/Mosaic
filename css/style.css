@@ -154,7 +154,7 @@ a:hover {
   display:inline-block;
 }
 
-#sample-title {
+.sample-title {
   text-transform: uppercase;
   display: inline;
   /* border: 2px red solid; */
@@ -162,9 +162,10 @@ a:hover {
   margin-top: 18px;
   float:left;
   padding-left: 0px;
+  cursor: default;
 }
 
-#sample-time {
+.sample-time {
   /* padding-left: 60%; */
   text-transform: uppercase;
   font-weight: lighter;
@@ -174,6 +175,7 @@ a:hover {
   margin-right: 15px;
   margin-top: 18px;
   float:right;
+  cursor: default;
 }
 
 .button {
@@ -186,6 +188,7 @@ a:hover {
   margin-right: 10px;
   display: inline;
   float:right;
+  cursor: pointer;
 }
 
 #download-link{
