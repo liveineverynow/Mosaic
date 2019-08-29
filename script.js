@@ -10,13 +10,13 @@ var seekee = null
 
 // Returns a div containing the audio controls for an <audio> element
 function buildControls(sample) {
-  
+
   // Create the sample title
   let sampleTitle = document.createElement("h3")
   let title = sample.src.split("/").reduce((a, c) => c)
   sampleTitle.classList.add("sample-title")
   sampleTitle.textContent = title
-  
+
   // Create the sample time
   let sampleTime = document.createElement("h3")
   sampleTime.classList.add("sample-time")
@@ -28,7 +28,7 @@ function buildControls(sample) {
   sample.onloadedmetadata = function() {
     sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${Math.floor(sample.duration) % 60}`
   }
-  
+
   // Create the play/pause button
   let playButton = document.createElement("img")
   playButton.classList.add("button")
@@ -42,7 +42,7 @@ function buildControls(sample) {
       playButton.src = "assets/Play-Button.png"
     }
   }
-  
+
   // Create the download link
   let downloadButton = document.createElement("a")
   downloadButton.href = `samples/${title}`
@@ -51,17 +51,17 @@ function buildControls(sample) {
   let downloadImage = document.createElement("img")
   downloadImage.src = "assets/Download-Button.png"
   downloadButton.appendChild(downloadImage)
-  
+
   // Create the return div
   let div = document.createElement("div")
   div.classList.add("sample")
-  
+
   // Change the background gradient to reflect the percentage of the sample played
   sample.ontimeupdate = function() {
     let percent = (sample.currentTime / sample.duration * 100)
     div.style.backgroundImage = `linear-gradient(to right, #e8e8e8 ${percent}%, #fff 0%)`
   }
-  
+
   // add the elements to the return div
   div.appendChild(sampleTitle)
   div.appendChild(sampleTime)
@@ -86,3 +86,10 @@ function buildControls(sample) {
   }
   return div
 }
+
+// animation for floating images
+  function step() {
+      //do stuff
+        window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
