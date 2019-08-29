@@ -111,9 +111,8 @@ a:hover {
 
 .primary-content {
   width: 95%;
-  margin: auto;
   max-width: 800px;
-  align-content: center;
+  margin: auto;
 }
 
 #intro-explanantion {
@@ -122,7 +121,6 @@ a:hover {
 
 #sample-kit{
   margin: 50px 0 25px 0;
-  justify-content:  center;
   margin-bottom: 25px;
 }
 
@@ -137,13 +135,7 @@ a:hover {
 
 #sample-kit-sub-title{
   width: 100%;
-  /* padding-left: 100px;
-  padding-right: 60px; */
-  margin:auto;
-  /* margin-left: 35px; */
   margin-bottom: 30px;
-  /* max-width: 800px;
-  justify-content:  center; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -154,24 +146,19 @@ a:hover {
 
   height: 60px;
   background-color: #fff;
-  margin:auto;
   margin-bottom: 15px;
-  padding-left: 10px;
 
   display: flex;
   align-items: center;
+  
   user-select: none;
   -moz-user-select: none;
 }
 
 .sample-title {
   text-transform: uppercase;
-  user-select: none;
-  display: inline;
   margin: auto;
-  margin-top: 18px;
-  float:left;
-  padding-left: 0px;
+  margin-left: 10px;
   cursor: default;
   flex: 1;
 
@@ -264,50 +251,7 @@ a:hover {
   position: fixed;
   width: 300px;
   top: 30%;
-
-/* .spin {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 60s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 60s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 60s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-
-  animation-name: spin;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
-
-@-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg)}
-  to { -ms-transform: rotate(360deg)}
-}
-
-@-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg)}
-  to { -moz-transform: rotate(360deg)}
-}
-
-@-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg)}
-  to { -webkit-transform: rotate(360deg)}
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 /* Layout Styles ------------------ */
 
