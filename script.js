@@ -76,7 +76,7 @@ function buildControls(sample) {
       sample.fastSeek(percentage*sample.duration)
     }
   }
-  
+
   // Seek track when control div is dragged
   div.onmousemove = function(e) {
     if (e.buttons === 1 && seeker === div && e.target.nodeName !== "IMG") {
@@ -86,10 +86,3 @@ function buildControls(sample) {
   }
   return div
 }
-
-// animation for floating images
-  function step() {
-      //do stuff
-        window.requestAnimationFrame(step);
-    }
-    window.requestAnimationFrame(step);
