@@ -23,7 +23,7 @@ function buildControls(sample) {
   if (!sample.duration) {
     sampleTime.textContent = "0:00"
   } else {
-    sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${Math.floor(sample.duration) % 60}`
+    sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${("000" + Math.floor(sample.duration) % 60).slice(-2)}`
   }
   sample.onloadedmetadata = function() {
     sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${Math.floor(sample.duration) % 60}`
