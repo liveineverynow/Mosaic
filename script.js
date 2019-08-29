@@ -6,7 +6,7 @@ for (let i=0; i<samples.length; i++) {
 }
 
 // var to allow seeking for one sample at a time
-var seekee = null
+var seeker = null
 
 // Returns a div containing the audio controls for an <audio> element
 function buildControls(sample) {
