@@ -204,8 +204,112 @@ a:hover {
   text-transform:uppercase;
   /* border: 2px red solid; */
   margin-bottom: 25px;
-
 }
+
+.shape-tiles {
+  pointer-events: none;
+}
+
+.shape-tiles img {
+  width: 100%;
+}
+
+.shape-container{
+  display:block;
+  width: 95%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 90vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#ShapeA {
+  left: -5%;
+  position: fixed;
+  width: 500px;
+  top: 70%;
+}
+
+#ShapeB {
+  left: 5%;
+  position: fixed;
+  width: 525px;
+  top: 20%;
+}
+
+#ShapeC {
+  left: 40%;
+  position: fixed;
+  width: 425px;
+  top: 60%;
+}
+
+#ShapeD {
+  left: 75%;
+  position: fixed;
+  width: 500px;
+  top: 80%;
+}
+
+#ShapeE {
+  left: 80%;
+  position: fixed;
+  width: 500px;
+  top: -3%;
+}
+
+#ShapeF {
+  left: 65%;
+  position: fixed;
+  width: 300px;
+  top: 30%;
+
+/* .spin {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 60s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg)}
+  to { -ms-transform: rotate(360deg)}
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg)}
+  to { -moz-transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg)}
+  to { -webkit-transform: rotate(360deg)}
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
 
 /* Layout Styles ------------------ */
 
