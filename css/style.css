@@ -113,6 +113,7 @@ a:hover {
   width: 95%;
   max-width: 800px;
   margin: auto;
+  z-index: 1;
 }
 
 #intro-explanantion {
@@ -198,6 +199,7 @@ a:hover {
 
 .shape-tiles {
   pointer-events: none;
+  z-index: -1;
 }
 
 .shape-tiles img {
