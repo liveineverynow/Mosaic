@@ -103,7 +103,7 @@ a:hover {
 
 
 #logo{
-  width: 10%;
+  width: 200px;
   margin: auto;
   max-width: 960px;
   align-content: center;
@@ -294,8 +294,24 @@ footer {
    .primary-content {
      width:90%;
    }
-   #logo{
+   /* #logo{
      width: 20%;
+   } */
+
+   #ShapeA {
+     left: -10%;
+   }
+
+  #ShapeB {
+     display:none;
+   }
+
+   #ShapeC {
+      display:none;
+    }
+
+   #ShapeF {
+     display:none;
    }
  }
 
@@ -309,6 +325,6 @@ footer {
    }
 
    #logo{
-     width: 50%;
+     width: 40%;
    }
 }
