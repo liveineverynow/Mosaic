@@ -151,6 +151,7 @@ a:hover {
   user-select: none;
   -moz-user-select: none;
   box-shadow: 5px 6px  rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 /* .sample:hover  {
@@ -234,6 +235,7 @@ a:hover {
   position: fixed;
   width: 425px;
   top: 60%;
+  z-index: -3;
 }
 
 #ShapeD {
