@@ -10,6 +10,10 @@ var seeker = null
 
 // Returns a div containing the audio controls for an <audio> element
 function buildControls(sample) {
+  
+  // Create the progress div
+  let progressBar = document.createElement("div")
+  progressBar.classList.add("progress-bar")
 
   // Create the sample title
   let sampleTitle = document.createElement("h3")
@@ -21,12 +25,12 @@ function buildControls(sample) {
   let sampleTime = document.createElement("h3")
   sampleTime.classList.add("sample-time")
   if (!sample.duration) {
-    sampleTime.textContent = "0:00"
+    sampleTime.textContent = ""
   } else {
     sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${("000" + Math.floor(sample.duration) % 60).slice(-2)}`
   }
   sample.onloadedmetadata = function() {
-    sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${Math.floor(sample.duration) % 60}`
+    sampleTime.textContent = `${Math.floor(sample.duration / 60)}:${("000" + Math.floor(sample.duration) % 60).slice(-2)}`
   }
 
   // Create the play/pause button
@@ -59,29 +63,34 @@ function buildControls(sample) {
   // Change the background gradient to reflect the percentage of the sample played
   sample.ontimeupdate = function() {
     let percent = (sample.currentTime / sample.duration * 100)
-    div.style.backgroundImage = `linear-gradient(to right, #e8e8e8 ${percent}%, #fff 0%)`
+    progressBar.style.backgroundImage = `linear-gradient(to right, #00000022 ${percent}%, #ffffff00 0%)`
   }
 
   // add the elements to the return div
   div.appendChild(sampleTitle)
-  div.appendChild(sampleTime)
-  div.appendChild(downloadButton)
-  div.appendChild(playButton)
+  progressBar.appendChild(sampleTime)
+  progressBar.appendChild(playButton)
+  progressBar.appendChild(downloadButton)
+  div.appendChild(progressBar)
 
   // Seek track when control div is clicked
-  div.onmousedown = function(e) {
+  progressBar.onmousedown = function(e) {
     seeker = div
-    if (e.target.nodeName !== "IMG") {
-      let percentage = (e.clientX - div.offsetLeft) / (div.offsetWidth)
+    if (e.target.nodeName === "DIV") {
+      let percentage = (e.offsetX) / (progressBar.offsetWidth)
       sample.fastSeek(percentage*sample.duration)
+      sample.play()
+      playButton.src = "assets/Pause-Button.png"
     }
   }
 
   // Seek track when control div is dragged
-  div.onmousemove = function(e) {
-    if (e.buttons === 1 && seeker === div && e.target.nodeName !== "IMG") {
-      let percentage = (e.clientX - div.offsetLeft) / (div.offsetWidth)
+  progressBar.onmousemove = function(e) {
+    if (e.buttons === 1 && seeker === div && e.target.nodeName === "DIV") {
+      let percentage = (e.offsetX) / (progressBar.offsetWidth)
       sample.fastSeek(percentage*sample.duration)
+      sample.pause()
+      playButton.src = "assets/Play-Button.png"
     }
   }
   return div
