@@ -3,6 +3,10 @@
   "builds": [{ "src": "index.js", "use": "@now/node-server" }],
   "routes": [
     {
+      "src": "/",
+      "dest": "/index.js"
+    },
+    {
       "src": "/downloads/(.*)",
       "dest": "/index.js"
     }
