@@ -47,8 +47,6 @@ h6 {
   margin-top: 20px;
 }
 
-
-
 p {
   font-size: .835625rem;  /*13.37px /16px */
 }
@@ -179,7 +177,6 @@ a:hover {
   margin-left: 10px;
   cursor: default;
   flex: 1;
-
 }
 
 .sample-time {
@@ -329,7 +326,7 @@ footer {
    #logo{
      width: 40%;
    }
-   
+
    h3 {
      font-size: 1rem;
    }
