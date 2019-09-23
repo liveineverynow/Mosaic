@@ -10,7 +10,7 @@ var seeker = null
 
 // Returns a div containing the audio controls for an <audio> element
 function buildControls(sample) {
-  
+
   // Create the progress div
   let progressBar = document.createElement("div")
   progressBar.classList.add("progress-bar")
